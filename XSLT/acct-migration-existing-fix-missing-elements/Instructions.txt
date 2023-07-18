@@ -1,0 +1,10 @@
+
+Instructions for running the corb.
+
+1) Copy the acctdoc-5356.txt to /tmp/acctdoc-5356.txt( on Unix)
+
+2) Navigate to the ML acct-instance directory ML_SERVICES/Releases/<VERSION>/acct_ml_services/projects/acct-instance
+3) gradle -i -Penv=<ML environment> corb -PcorbOptionsFile=utility/corb/acctdoc/acctdoc-migration-existing-fix-missing-element/corb.properties
+    example:Usage: $ gradle -i -Penv=acct-red-local corb -PcorbOptionsFile=utility/corb/acctdoc/acctdoc-migration-existing-fix-missing-element/corb.properties
+4) check the log ERROR-FILE-NAME=/tmp/acctdoc-migration-existing-fix-missing-elements.log
+5) View error and MLlogs
